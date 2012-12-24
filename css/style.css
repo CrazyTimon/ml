@@ -427,3 +427,257 @@ div.footer {
     top: -140px;
     left: 10px;
 }
+
+.footer_fix{
+    margin-top:60px;
+}
+
+.catalog__leftbar{
+    float:left;
+    margin-left:10px;
+    width:220px;
+    margin-top: 17px;
+}
+
+.catalog__rightbar{
+    float:left;
+    width: 695px;
+    padding-left: 10px;
+    margin-top: 17px;
+}
+
+.catalog__list-tree {
+    padding-left: 5px;
+}
+
+.catalog__list-tree ul{
+    list-style-type: none;
+}
+
+.catalog__list-tree ul a {
+    text-decoration: underline;
+}
+
+.catalog__list-tree_first-level{
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+.catalog__list-tree_second-level{
+    font-size: 16px;
+    margin-left: 17px;
+    letter-spacing: 1px;
+}
+
+.catalog__list-tree_third-level{
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+.catalog__list-tree_third-level li{
+    line-height: 17px;
+}
+
+.catalog__filter__caption{
+    margin: 6px 0px 4px 20px;
+    text-decoration:underline;
+    float:left;
+}
+
+.catalog__filter{
+    background: #F7F7F7;
+    margin-left: 10px;
+}
+
+.catalog__filter_bottom-line{
+    border-bottom: #CCC dashed 1px;
+}
+
+.catalog__filter__delete{
+    float:right;
+    margin: 6px 5px 4px 0px;
+    font-size: 10px;
+    color: #CCC;
+}
+
+.catalog__filter__icon{
+    display: block;
+    border-bottom: 0;
+    padding-bottom: 0;
+    float: right;
+    width: 15px;
+    height: 15px;
+    font-size: 1px;
+    margin-top: 10px;
+}
+
+.catalog__filter__icon_arrow{
+    background: #CCC url(../img/filter_link_icons.png) no-repeat left top;
+    margin-right: 10px;
+}
+
+.catalog__filter__icon_cross{
+    background: #CCC url(../img/filter_link_icons.png);
+    background-position: 0 -30px;
+    margin-right:5px;
+}
+
+.catalog__filter__content{
+    margin-top:10px;
+}
+
+.catalog__filter__content ul{
+    list-style-type: none;
+    margin-left:5px;
+}
+
+.catalog__filter__color__item {
+    height:15px;
+    width:15px;
+    border-radius:100%;
+    float: left;
+    margin-top: 3px;
+    margin-right:10px;
+}
+
+.catalog__filter__color__item_red {
+    background-color: #FF0000;
+}
+
+.catalog__filter__color__item_orange{
+    background-color: orange;
+}
+.catalog__filter__color__item_yellow{
+    background-color: yellow;
+}
+.catalog__filter__color__item_green{
+    background-color: green;
+}
+.catalog__filter__color__item_teal{
+    background-color: teal;
+}
+.catalog__filter__color__item_blue{
+    background-color: blue;
+}
+.catalog__filter__color__item_pink{
+    background-color: pink;
+}
+.catalog__filter__color__item_brown{
+    background-color: brown;
+}
+.catalog__filter__color__item_white{
+    background-color: white;
+}
+.catalog__filter__color__item_gray{
+    background-color: gray;
+}
+.catalog__filter__color__item_black{
+    background-color: black;
+}
+
+.current-filter-block{
+    border: 1px dashed red;
+    padding: 2px 20px;
+}
+
+.current-filter-block_red{
+    color:red;
+}
+
+.current-filter-block__attention{
+    margin-top: 7px;
+    font-size: 11px;
+}
+
+.current-filter-block__caption{
+    font-size: 11px;
+    margin: 7px 5px 0px 5px;    
+}
+
+.items-block{
+
+}
+
+.items-block__item{
+    margin-top: 25px;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 202px;
+    padding: 10px;
+    height: 250px;
+}
+
+.items-block__item_middle-margin{
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.items-block__item-img{
+    height: 178px;
+    max-width: 202px;
+}
+
+.items-block__item-title{
+    margin-top:10px;
+    text-decoration: underline;
+    font-size:17px;
+}
+
+.items-block__item-desc{
+    font-size:11px;
+}
+
+.items-block__item-cost{
+    font-size:18px;
+}
+
+.items-block__moreitems{
+    margin-top:5px;
+    border-bottom:1px dotted blue;
+}
+
+.items-block__moreitems:hover{
+    border-bottom:0px dotted blue;
+    text-decoration: none;
+}
+
+.pagination-items-block{
+    margin-top: 10px;
+}
+.pagination-items-block__navigator{
+    font-size: 10px;
+}
+
+.pagination-items-block__pages li a, .pagination-items-block__navigator a{
+    border-bottom: 1px dotted blue;
+}
+
+.pagination-items-block__pages li a:hover, .pagination-items-block__navigator a:hover{
+    border-bottom: 0px dotted blue;
+    text-decoration: none;
+}
+
+.pagination-items-block__navigator span{
+    font-size: 14px;
+}
+.pagination-items-block__pages{
+
+}
+
+.pagination-items-block__pages li{
+    list-style-type: none;
+    width: 29px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+}
+
+.pagination-items-block__pages li.active{
+    background-color: #B97A57;
+}
+
+.pagination-items-block__pages li a{
+
+}
