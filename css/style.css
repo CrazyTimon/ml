@@ -681,3 +681,7 @@ div.footer {
 .pagination-items-block__pages li a{
 
 }
+
+.custom-main-right_norightborder:after{
+    border:0;
+}
