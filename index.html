@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Модная Лавка</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".carousel").carousel();
+        $(".addcart").click(function(){
+            var id = $(this).attr("id");
+            $.post("/cart/",{ plugin:"cart", go:"add", id:id },function(data){
+                if(data == 1) {
+                    $(".addcart[id="+id+"]").text("Добавлено в корзину");
+                    var cart = parseInt($("#cart").text())+1;
+                    $("#cart").text(cart);
+                } else {
+                    alert('При добавлении возникла ошибка. Обратитесь к администратору.');
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<div class="container main">
+    <div class="row logo">
+        <div class="span8"><a href="/"><img src="img/logo.png" alt=""></a></div>
+        <div class="span2" style="margin-top:35px;">
+            <span class="cost_red">КОРЗИНА:</span>
+            <br>
+            <small>
+                Здесь будут лежать ваши покупки
+            </small>
+        </div>
+        <div class="span2" style="margin-top:30px;">
+            <div class="menu_top_right">
+                <a href="#">Личный кабинет</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="dig_footer">
+            <div class="dig_footer__item dig_footer__item_right"><a href="/">мебель</a></div>
+            <div class="dig_footer__item dig_footer__item_right"><a href="/">кухня</a></div>
+            <div class="dig_footer__item dig_footer__item_right"><a href="/pletenaya_mebel/">обои</a></div>
+            <div class="dig_footer__item dig_footer__item_right"><a href="/kovanaya_mebel/">часы</a></div>
+            <div class="dig_footer__item dig_footer__item_cock"><input type="text"><input class="dig_footer__item_ass" type="submit" value="Найти"></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="active item"><img src="img/1.jpg" alt="" /></div>
+            <div class="item"><img src="img/2.jpg" alt="" /></div>
+            <div class="item"><img src="img/3.jpg" alt="" /></div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <div class="row">
+        <div class="index__leftside">
+            <div class="index__recomend">
+                <span>РЕКОМЕНДУЕМ</span>
+                <img src="img/2/23.jpg">
+                <div class="clearfix"><br></div>
+                <div class="index__recomend-title">Шкаф</div><br>
+                <div class="index__recomend-desc">вороново крыло</div>
+                <div class="index__recomend-cost"> — 5 700</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="index__mailer">
+                <span class="index__mailer-caption">ПОДПИШИСЬ НА НАШУ РАССЫЛКУ!</span>
+                <img src="img/subscribe_top_bg.gif">
+                <div class="index__mailer-desc">
+                    Новинки, тренды, акции и распродажи — вам в первые руки!
+                </div>
+                <input type="text">
+                <button class="btn btn-small btn-info" type="button">Подписаться</button>
+                <br>
+                <a href="#">Пример расслыки</a>
+            </div>
+        </div>
+
+        <div class="index__rightside">
+            <span>НОВЫЕ ПОСТУПЛЕНИЯ</span>
+            <div class="items-block__item">
+                    <center>
+                        <img class="items-block__item-img" src="img\1\1.jpg">
+                    </center>
+                    <div class="items-block__item-title">Шкаф</div>
+                    <div class="items-block__item-desc">для белья 2 двери</div>
+                    <div class="items-block__item-cost">— 28 880руб.</div>
+            </div>
+            <div class="items-block__item items-block__item_middle-margin">
+                <center>
+                    <img class="items-block__item-img" src="img\1\2.jpg">
+                </center>
+                <div class="items-block__item-title">Комод</div>
+                <div class="items-block__item-desc">для белья 2 двери</div>
+                <div class="items-block__item-cost">— 28 880руб.</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <span>СКИДКИ</span>
+            <div class="items-block__item">
+                    <center>
+                        <img class="items-block__item-img" src="img\1\1.jpg">
+                    </center>
+                    <div class="items-block__item-title">Шкаф</div>
+                    <div class="items-block__item-desc">для белья 2 двери</div>
+                    <div class="items-block__item-cost">— 28 880руб.</div>
+            </div>
+            <div class="items-block__item items-block__item_middle-margin">
+                <center>
+                    <img class="items-block__item-img" src="img\1\2.jpg">
+                </center>
+                <div class="items-block__item-title">Комод</div>
+                <div class="items-block__item-desc">для белья 2 двери</div>
+                <div class="items-block__item-cost">— 28 880руб.</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="index__news top-dashed">
+            <div class="index__news__content">Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. Здесь будут новости. </div>
+            <div class="index__news__all"><a href="">Все новости</a></div>
+        </div>
+    </div>
+</div>
+<div class="footer_fix">
+</div>
+<div class="container footer">
+    <div class="row">
+        <div class="span12 custom-footer-color">
+            <div class="row">
+                <div class="span2 offset2"><br><a href="">Вопросы и ответы</a><br><a href="">Схема работы</a></div>
+                <div class="span2 offset1"><br><a href="">Об оплате</a><br><a class="" href="">О доставке</a></div>
+                <div class="span4 custom-footer-color-contacts">
+                    <div style="text-decoration: underline">Контакты</div>
+                    <div><i class="icon-user icon-white"></i>(3452) 97-47-44; <i class="icon-user icon-white"></i>8 800 720 72 72</div>
+                    <div>
+                        <i class="icon-envelope icon-white"></i>&nbsp;<span>mlavka@mail.ru</span>&nbsp;<img src="./img/icon_icq.png">&nbsp;<span>icq: 625579340</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="span12">&nbsp;</div>
+    </div>
+    <div class="row ">
+        <div class="span7 offset1">способы обплаты | <img src="./img/oplata.jpg"></div>
+        <div class="span4">способы доставки | <img src="./img/dostavka.jpg"></div>
+    </div>
+    <div class="row ">
+        <div class="span12">&nbsp;</div>
+    </div>
+
+<div class="row">
+    <div class="dig_footer">
+        <div class="dig_footer__item dig_footer__item_right"><a href="/">мебель</a></div>
+        <div class="dig_footer__item dig_footer__item_right"><a href="/">кухня</a></div>
+        <div class="dig_footer__item dig_footer__item_right"><a href="/pletenaya_mebel/">обои</a></div>
+        <div class="dig_footer__item dig_footer__item_right"><a href="/kovanaya_mebel/">часы</a></div>
+        <div class="dig_footer__item dig_footer__item_cock"><input type="text"><input class="dig_footer__item_ass" type="submit" value="Найти"></div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="span1"><i class="icon-arrow-up"></i><a href="#" style="text-decoration: underline;">Наверх</a></div>
+    <div class="span3 offset4">©&nbsp;2012&nbsp;Модная лавка</div>
+</div>
+</div>
+</div>
+</body>
+</html>
