@@ -797,3 +797,75 @@ div.footer {
 .index__news__all{
     float: right;
 }
+
+.css-sprite__payment_yandex{
+    background: url('../img/pay.png') 100px -68px;
+    height: 26px;
+    width: 23px;
+}
+
+.css-sprite__payment_visa{
+    background: url('../img/pay.png') 407px -69px;
+    height: 26px;
+    width: 37px;
+}
+
+.css-sprite__payment_mastercard{
+    background: url('../img/pay.png') 354px -70px;
+    height: 26px;
+    width: 31px;
+}
+
+.css-sprite__payment_webmoney{
+    background: url('../img/pay.png') 100px -22px;
+    height: 26px;
+    width: 26px;
+}
+
+.css-sprite__payment_paypal{
+    background: url('../img/pay.png') 56px -68px;
+    height: 26px;
+    width: 37px;
+}
+
+.css-sprite__payment_rbkmoney{
+    background: url('../img/pay.png') 354px -121px;
+    height: 26px;
+    width: 31px;
+}
+
+.css-sprite__payment_zz{
+    background: url('../img/pay.png') 305px -325px;
+    height: 26px;
+    width: 34px;
+}
+
+.css-sprite__payment_mailrumoney{
+    background: url('../img/pay.png') 150px -68px;
+    height: 26px;
+    width: 23px;
+}
+
+.css-sprite__payment {
+    display: inline-block;
+    margin: -4px 5px -5px 5px;
+}
+
+.css-sprite__delivery{
+    display: inline-block;
+    margin: -7px 0px -12px 6px;
+}
+
+.css-sprite__delivery_kit{
+    background: url('../img/kit.jpg');
+    height: 36px;
+    width: 53px;
+    background-size: cover;
+}
+
+.css-sprite__delivery_ea{
+    background: url('../img/ea.png');
+    height: 36px;
+    width: 41px;
+    background-size: cover;
+}
