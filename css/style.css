@@ -34,7 +34,7 @@ div.element {
 	
 div.footer {
 	background-color: #FFFFFF;
-	padding: 30px 10px 10px 10px;
+	padding: 30px 10px 10px 0px;
     margin-top: -60px;
     /*border:1px dashed #666666;*/
 	/*height: 70px;*/
